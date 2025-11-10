@@ -2,7 +2,8 @@
     function headContent($title) {
         echo '<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>'.$title.' | Peliculas</title>
+        <link rel="shortcut icon" href="static/img/utc_blue_circle.ico" type="image/x-icon">
+        <title>'.$title.' | Peliculas | Code Crafters</title>
         
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
