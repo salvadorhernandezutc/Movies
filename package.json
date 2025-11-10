@@ -1,8 +1,7 @@
 {
     "name": "movies",
     "version": "1.0.0",
-    "description": "",
-    "type": "module",
+    "description": "**Movies** es un proyecto que conecta un **frontend dinámico** con una **API desarrollada en C#**, utilizando **AJAX**, **PHP** y **tokens seguros** para la autenticación y protección de datos.   El objetivo del proyecto es ofrecer una interfaz web moderna que permita a los usuarios consultar, filtrar y gestionar información de películas en tiempo real, garantizando la comunicación segura entre cliente y servidor.",
     "main": "gulpfile.js",
     "scripts": {
         "dev": "gulp"
@@ -14,6 +13,7 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "type": "module",
     "bugs": {
         "url": "https://github.com/Stranger11ac/movies/issues"
     },
