@@ -1,0 +1,35 @@
+.nav-session {
+    --padding: 15px;
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    background-color: var(--mdb-body-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        img {
+            height: 40px;
+            margin-right: 5px;
+        }
+
+        span {
+            transform-origin: left center;
+            transform: scale(1.9);
+        }
+    }
+
+    a {
+        height: 100%;
+        aspect-ratio: 1/1;
+        padding: 5px;
+        background: var(--mdb-body-color);
+        color: var(--detail-bg);
+        border-radius: var(--radius-btn);
+        display: grid;
+        place-items: center;
+    }
+}
