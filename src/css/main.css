@@ -10,8 +10,8 @@
 :root {
     --radius: 10px;
     --radius-btn: 50%;
-    --detail-bg: rgb(var(--mdb-warning-rgb));
-    --detail-bg-hover: rgba(var(--mdb-warning-rgb), 0.7);
+    --detail-bg: rgb(var(--mdb-info-rgb));
+    --detail-bg-hover: rgba(var(--mdb-info-rgb), 0.7);
     --transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 ::selection {
@@ -19,8 +19,8 @@
     background: var(--mdb-light);
 }
 .card ::selection {
-    background-color: var(--mdb-card-bg);
-    background: var(--mdb-card-bg);
+    background-color: var(--mdb-body-color);
+    background: var(--mdb-body-color);
     color: var(--detail-bg);
 }
 

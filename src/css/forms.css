@@ -11,3 +11,7 @@
         color: var(--detail-bg);
     }
 }
+
+.card-450 {
+    background: var(--mdb-body-bg) !important;
+}
