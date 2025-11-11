@@ -12,7 +12,6 @@
         <?php headContent("Inicio de Sesion"); ?>
     </head>
     <body>
-
         <main>
             <form action="login">
                 <div class="card mb-4">
