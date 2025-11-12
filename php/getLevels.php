@@ -1,24 +1,9 @@
 <?php
     session_start();
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $input = json_decode(file_get_contents('php://input'), true);
-        $descriptionPOST = $input['description'] ?? '';
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-        if (empty($descriptionPOST)) {
-            http_response_code(400);
-            echo json_encode([
-                "success" => false,
-                "status" => 400,
-                "message" => "La descripción es requerida"
-            ]);
-            exit;
-        }
-
-        $url = "http://localhost:8220/insert_level";
-        $data = array("ClasificacionDesc" => $descriptionPOST);
-        $jsonData = json_encode($data);
-
+        $url = "http://localhost:8220/get_level";
         $token = isset($_COOKIE['token']) ? $_COOKIE['token'] : null;
 
         if (!$token) {
@@ -33,12 +18,11 @@
         $ch = curl_init($url);
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST => true,
+            CURLOPT_HTTPGET => true,
             CURLOPT_HTTPHEADER => [
                 'Content-Type: application/json',
                 "Authorization: Bearer $token"
-            ],
-            CURLOPT_POSTFIELDS => $jsonData
+            ]
         ]);
 
         $response = curl_exec($ch);

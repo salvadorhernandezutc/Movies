@@ -67,6 +67,8 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 $(form)[0].reset();
+                console.log(response.json);
+                
 
                 toast({
                     icon: "success",

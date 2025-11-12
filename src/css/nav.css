@@ -3,22 +3,26 @@
     width: 100%;
     height: auto;
     border: none;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: var(--radius);
-    background-color: var(--mdb-body-bg);
+    background: var(--mdb-surface-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     div {
         img {
-            height: 40px;
+            height: 30px;
             margin-right: 5px;
+            filter: hue-rotate(50deg) brightness(1.1);
+            -webkit-user-select: none;
+            user-select: none;
         }
 
         span {
+            display: inline-block;
+            transform: scale(1.4) translateY(1px);
             transform-origin: left center;
-            transform: scale(1.9);
         }
     }
 

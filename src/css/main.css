@@ -19,8 +19,8 @@
     background: var(--mdb-light);
 }
 .card ::selection {
-    background-color: var(--mdb-body-color);
-    background: var(--mdb-body-color);
+    background-color: var(--mdb-card-color);
+    background: var(--mdb-card-color);
     color: var(--detail-bg);
 }
 

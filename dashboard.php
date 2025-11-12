@@ -3,7 +3,7 @@
     include 'php/session.php';
 ?>
 <!DOCTYPE html>
-<html lang="es" data-mdb-theme="dark">
+<html lang="es" data-mdb-theme="light">
     <head>
         <?php headContent("Administracion de Peliculas"); ?>
     </head>
@@ -74,7 +74,6 @@
                     </tbody>
                 </table>
             </div>
-            <div class="card-footer"></div>
         </div>
 
         <?php footerScripts(); ?>

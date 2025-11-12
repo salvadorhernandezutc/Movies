@@ -65,7 +65,6 @@
             "status" => $httpcode,
             "fullname" => $payload['fullname'],
             "json" => $json
-            // "response" => $json
         ]);
     } else {
         echo json_encode([
