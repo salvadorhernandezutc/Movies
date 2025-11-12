@@ -67,8 +67,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 $(form)[0].reset();
-                console.log(response.json);
-                
+                getLevels();
 
                 toast({
                     icon: "success",
@@ -90,7 +89,6 @@ $(document).ready(function () {
             },
         });
     }
-
 
     $("#btnShowPass").click(function () {
         const inputPass = $(this).data("input");

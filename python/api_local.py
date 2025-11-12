@@ -223,8 +223,6 @@ def get_level(user_data: dict = Depends(verify_token)):
         cursor.execute("SELECT * FROM clasificaciones ORDER BY ClasificacionId ASC;")
         rows = cursor.fetchall()
         return {
-            "status": 200,
-            "usuario": user_data["fullname"],
             "data": rows
         }
     except Exception as e:

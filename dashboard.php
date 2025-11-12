@@ -48,7 +48,7 @@
                         <tr>
                             <td>1</td>
                             <td>Descripcion 1</td>
-                            <td><button>1</button></td>
+                            <td><button class="btn btn-icon btn-detail"><i class="fa-solid fa-pen"></i></button><button class="btn btn-icon btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
                         </tr>
                         <tr>
                             <td>2</td>
