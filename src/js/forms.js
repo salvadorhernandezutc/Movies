@@ -10,6 +10,9 @@ $(document).ready(function () {
             case "insertLevel":
                 insertLevel(this);
                 break;
+            case "insertMovie":
+                insertMovie(this);
+                break;
 
             default:
                 break;
@@ -90,11 +93,54 @@ $(document).ready(function () {
         });
     }
 
+    function insertMovie(form) {
+        const formData = new FormData(form);
+        const jsonData = Object.fromEntries(formData.entries());
+
+        $.ajax({
+            url: "php/insertMovie.php",
+            type: "POST",
+            data: JSON.stringify(jsonData),
+            processData: false,
+            contentType: "application/json",
+            dataType: "json",
+            success: function (response) {
+                $(form)[0].reset();
+
+                toast({
+                    icon: "success",
+                    title: `Se registro una pelicula correctamente`,
+                    time: 2000,
+                    position: "top-end",
+                });
+            },
+            error: function (xhr, status, error, response) {
+                const errorData = xhr.responseJSON.json || {};
+                toast({
+                    icon: "error",
+                    title: `Error al intentar registrar la pelicula. <br><br> ${errorData.message || "Error desconocido"} <br> Código ${xhr.status}`,
+                    time: 5000,
+                    position: "center",
+                });
+                console.error("--- Este es el error resultante de ajax ---");
+                console.error(xhr.status, errorData);
+            },
+        });
+    }
+
     $("#btnShowPass").click(function () {
         const inputPass = $(this).data("input");
         const type = $(inputPass).attr("type") === "text" ? "password" : "text";
 
         $(inputPass).attr("type", type);
         $(this).toggleClass("fa-eye fa-eye-slash");
+    });
+
+    $("input[type='number']").blur(function () {
+        const min = $(this).attr("min");
+        const value = $(this).val();
+        if (value < min) {
+            $(this).val(min);
+        }
     });
 });
