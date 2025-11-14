@@ -16,6 +16,7 @@
 
             <a href="php/logout.php"><i class="fa-solid fa-right-from-bracket"></i></a>
         </nav>
+
         <form action="insertLevel" class="card card-450 mb-3" id="levelsMovie">
             <div class="card-header text-center">
                 <h3>Registrar Clasificaciones</h3>
@@ -126,6 +127,52 @@
                     <tbody id="moviesTableBody">
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <!-- Modal Modificar Clasificacion -->
+        <div class="modal fade" id="patchLevesModal" tabindex="-1" aria-labelledby="patchLevesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <form action="patchLevel" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="patchLevesModalLabel">Modificar descripcion</h5>
+                        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-outline" data-mdb-input-init>
+                            <input type="text" id="description" name="description" class="form-control" minlength="3" required />
+                            <label class="form-label" for="description">Descripcion:</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-detail">
+                            Modificar<i class="fas fa-pen ms-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal Eliminar Clasificacion -->
+        <div class="modal fade" id="deleteLevesModal" tabindex="-1" aria-labelledby="deleteLevesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteLevesModalLabel">Eliminar descripcion</h5>
+                        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="m-0">Desea eliminar la Clacificacion #1</p>
+                        <p class="m-0">"Para Todo Publico"</p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-danger">
+                            Eliminar<i class="fas fa-trash ms-2"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 

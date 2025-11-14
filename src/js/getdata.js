@@ -19,7 +19,7 @@
                 levelsContentTable.empty();
 
                 data.forEach((element) => {
-                    levelsContentTable.append(`<tr> <td>${element.ClasificacionId}</td> <td>${element.ClasificacionDesc}</td> <td class="d-flex gap-1"><button class="btn btn-icon btn-detail" data-id="${element.ClasificacionId}"><i class="fa-solid fa-pen"></i></button><button class="btn btn-icon btn-danger" data-id="${element.ClasificacionId}"><i class="fa-solid fa-trash-can"></i></button></td> </tr>`);
+                    levelsContentTable.append(`<tr> <td>${element.ClasificacionId}</td> <td>${element.ClasificacionDesc}</td> <td class="d-flex gap-1"><button class="btn btn-icon btn-detail" data-id="${element.ClasificacionId}" data-mdb-target="#patchLevesModal"><i class="fa-solid fa-pen"></i></button><button class="btn btn-icon btn-danger" data-id="${element.ClasificacionId}" data-mdb-target="#deleteLevesModal"><i class="fa-solid fa-trash-can"></i></button></td> </tr>`);
                 });
             },
             error: function (xhr, status, error, response) {
