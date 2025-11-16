@@ -43,32 +43,6 @@
                         </tr>
                     </thead>
                     <tbody id="levelsTableBody">
-                        <tr>
-                            <td>1</td>
-                            <td>Descripcion 1</td>
-                            <td><button class="btn btn-icon btn-detail"><i class="fa-solid fa-pen"></i></button><button class="btn btn-icon btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Descripcion 2</td>
-                            <td><button>2</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Descripcion 3</td>
-                            <td><button>3</button></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Descripcion 4</td>
-                            <td><button>4</button></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Descripcion 5</td>
-                            <td><button>5</button></td>
-                        </tr>
-
                     </tbody>
                 </table>
             </div>
