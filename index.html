@@ -4,21 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peliculas</title>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.3.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <i class="fas fa-arrows-rotate"></i>
+<body class="d-grid-center">
+    <article class="card">
+        <div class="card-header text-center">
+            <h2 class="m-0">Iniciar Sesión</h2>
+        </div>
+        <div class="card-body">
+            <form>
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="user" class="form-control" />
+                    <label class="form-label" for="user">Usuario:</label>
+                </div>
 
+                <div class="form-outline" data-mdb-input-init>
+                    <!-- <i class="far fa-eye  trailing-top"></i> -->
+                    <button type="button" id="btnPassword" class="trailing-button"><i class="far fa-eye  trailing-top"></i></button>
+                    <input type="password" id="passw" class="form-control form-icon-trailing" />
+                    <label class="form-label" for="passw">Contraseña:</label>
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </div>
+    </article>
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.3.0/mdb.umd.min.js"></script>
+
+    <script>
+        const btnShowPass = document.getElementById("btnPassword");
+        const inputPass = document.getElementById("passw");
+        btnShowPass.addEventListener("click", function(e){
+            e.preventDefault();
+            inputPass.attr("type", "text");
+        })
+    </script>
 </body>
 
 </html>

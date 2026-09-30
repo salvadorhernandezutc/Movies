@@ -1,0 +1,42 @@
+*, *::after, *::before {
+    margin: none !important;
+    padding: none !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.d-grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.trailing-top {
+    z-index: 100 !important;
+}
+
+.trailing-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+}
+.trailing-button:hover {
+    color: lime;
+}
+.trailing-button:active {
+    color: red;
+}
+
+.trailing-top ~ input {
+    background: red !important;
+    z-index: 0;
+    position: relative;
+}
