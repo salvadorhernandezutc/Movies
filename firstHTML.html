@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer HTML | Titulo en pestaña</title>
+
+    <style>
+        /* selector {
+           property: value;
+        } */
+        p {
+            font-size: 12px;
+            color: rgba(102, 51, 153, 0.343);
+        }
+
+        div.container {
+            background-color: red;
+        }
+
+        div p {
+            color: red;
+        }
+
+        div {
+            background-color: yellow;
+
+            p {
+                color: blue;
+            }
+        }
+
+        p.green {
+            color: lime;
+        }
+
+        div[data-id="1"] {
+            background-color: green;
+        }
+
+        #fname {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo de la pagina</h1>
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo</h3>
+    <h4>Titulo con tamaño de texto</h4>
+    <h5>Titulo</h5>
+    <h6>Titulo</h6>
+
+    <br><!-- Salto de linea -->
+    <hr>
+    <br>
+
+
+    <p>This is a paragraph.</p>
+    <p class="green">This is another paragraph.</p>
+    <p>Un h1 Es el titulo mas importante de la pagina, por regla html nunca te dara un error, pero semanticamente no
+        debe existir mas de 1 h1</p>
+
+    <div>
+        <p>Con los demas heading no hay ningun problem, pueden repetirse varios h2, h3, etc.</p>
+    </div>
+    <div class="container" data-id="1" data-name="container">
+        <p>Con los demas heading no hay ningun problem, pueden repetirse varios h2, h3, etc.</p>
+    </div>
+
+    <p>
+        This paragraph
+
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, et libero impedit, necessitatibus soluta,
+        maxime illum at explicabo consequuntur molestias sunt. Minima natus laudantium quam sunt eligendi. Sed, dicta
+        nemo!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt incidunt, eum minima sapiente dolore ipsa ullam
+        esse consequatur beatae fugit eius eligendi ex rerum, placeat molestiae aperiam quisquam totam. Voluptate, quae
+        ad, aliquam suscipit pariatur dolorum perferendis quos in ab quis quas accusamus? Aliquam, inventore! Vero omnis
+        esse doloremque. Temporibus accusantium voluptatibus totam natus iusto voluptate adipisci amet dolore ea iste
+        tenetur dicta omnis in, expedita laboriosam ipsam quasi. Et, corporis quae optio unde autem quidem dolorum vitae
+        fugiat omnis commodi corrupti architecto esse laboriosam laudantium sed iste eligendi impedit aspernatur
+        accusantium? Consequuntur eveniet est, tempora quibusdam ratione veritatis ipsa.
+    </p>
+
+    <p>
+        This paragraph
+        contains a lot of spaces
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, et libero impedit, necessitatibus soluta,
+    maxime illum at explicabo consequuntur molestias sunt. Minima natus laudantium quam sunt eligendi. Sed, dicta nemo!
+
+    <br>
+    <hr>
+    <br>
+
+    <b>This text is bold</b>.....
+    <br><strong>This text is important!</strong>
+    <br><i>This text is italic</i>
+    <br><em>This text is emphasized</em>
+    <br><small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <u>blue</u> <ins>red</ins>.</p>
+    <p>This is H<sub>2</sub>O text.</p>
+    <p>This is <span>nothing</span></p>
+
+    <br>
+    <hr>
+    <br>
+
+    <img src="pic_trulli.webp" alt="😊">
+    <img src="img_girl.jpg" alt="Girl in a jacket">
+    <img src="img_chania.jpg" alt="Flowers in Chania">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+    <br>
+    <hr>
+    <br>
+
+    <ul>
+        <li>
+            Coffee
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol>
+        <li>Coffee
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <table>
+        <!-- table row -->
+        <tr>
+            <th>Company</th>
+            <!-- table heading -->
+            <th>Contact</th>
+            <th>Country</th>
+
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+        </tr>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <button>Click Me</button>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <form method="post / get">
+        First name: <input type="password" name="fname" id="fname">
+        <button type="button">button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+    </form>
+
+    <br>
+
+    <form>
+        .
+        form elements
+        .
+    </form>
+
+    <br>
+
+    <form>
+        <label for="fname1">First name:</label><br>
+        <input type="text" id="fname1" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <input type="date" name="" id="" max="2026-10-08">
+        <br>
+        <input type="color" name="" id="">
+    </form>
+
+    <br>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <br>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <br>
+
+    <form action="/action_page.php">
+        <label for="fname3">First name:</label><br>
+        <input type="text" id="fname3" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- <br><br><br><br><br> -->
+</body>
+
+</html>
