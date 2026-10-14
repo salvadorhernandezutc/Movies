@@ -6,46 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer HTML | Titulo en pestaña</title>
 
-    <style>
-        /* selector {
-           property: value;
-        } */
-        p {
-            font-size: 12px;
-            color: rgba(102, 51, 153, 0.343);
-        }
-
-        div.container {
-            background-color: red;
-        }
-
-        div p {
-            color: red;
-        }
-
-        div {
-            background-color: yellow;
-
-            p {
-                color: blue;
-            }
-        }
-
-        p.green {
-            color: lime;
-        }
-
-        div[data-id="1"] {
-            background-color: green;
-        }
-
-        #fname {
-            background-color: blue;
-        }
-    </style>
+    <link rel="stylesheet" href="firstCSS.css">
 </head>
 
 <body>
+    <nav>Navbar</nav>
+    <main>Contenedor main</main>
     <h1>Titulo de la pagina</h1>
     <h2>Subtitulo</h2>
     <h3>Subtitulo</h3>
@@ -129,17 +95,17 @@
     <hr>
     <br>
 
-    <ul>
+    <ul class="first-list">
         <li>
             Coffee
-            <ol>
+            <ol class="first-list--ol">
                 <li>Coffee</li>
                 <li>Tea</li>
                 <li>Milk
-                    <ol>
+                    <ol class="last-list--ol">
                         <li>Coffee</li>
                         <li>Tea</li>
-                        <li>Milk</li>
+                        <li><button type="button" disabled>hola boton</button></li>
                     </ol>
                 </li>
             </ol>
@@ -314,7 +280,53 @@
         <input type="submit" value="Submit">
     </form>
 
-    <!-- <br><br><br><br><br> -->
+    <br><br><br><br><br>
+    
+    <section class="d-flex-center border-first mb-5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div5">5</div>
+        <div class="div4">4</div>
+    </section>
+
+        <a href="https://codepen.io/alowpoly/pen/XJMVyXW" class="link" target="_blank">Link al proyecto original</a>}
+        <a href="https://codepen.io/alowpoly/pen/XJMVyXW" target="_blank" rel="noopener noreferrer">Button</a>
+    
+    <section class="d-flex jc-start ai-start border-first mb-5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div5">5</div>
+        <div class="div4">4</div>
+    </section>
+    
+    <section class="d-flex jc-end ai-start border-first mb-5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div5">5</div>
+        <div class="div4">4</div>
+    </section>
+    
+    <section class="d-flex jc-end ai-end border-first mb-5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div5">5</div>
+        <div class="div4">4</div>
+    </section>
+    
+    <section class="d-flex jc-start ai-end border-first">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div5">5</div>
+        <div class="div4">4</div>
+    </section>
+
+    <br><br><br><br><br>
+
 </body>
 
 </html>
